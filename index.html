@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Mente e Saúde | Livros e Publicações Médicas</title>
+    <meta name="description" content="Portal oficial da Editora Mente e Saúde. Vitrine da obra Princípios da Endocrinologia para o Médico Generalista (Vol. 1, Ed. 1, 2026) - ISBN 978-65-82901-02-7.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22',
+                        },
+                        endo: {
+                            dark: '#041e27',
+                            mid: '#0a3a4a',
+                            glow: '#2dd4bf',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cover-glow {
+            box-shadow: 0 25px 50px -12px rgba(45, 212, 191, 0.25), 0 0 30px rgba(16, 185, 129, 0.2);
+        }
+        .bio-pattern {
+            background-image: radial-gradient(rgba(45, 212, 191, 0.18) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.12) 1px, #041e27 1px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Barra Institucional Superior -->
+    <div class="bg-endo-dark text-slate-300 text-xs border-b border-teal-900/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5 text-teal-400 font-semibold">
+                    <i class="fa-solid fa-building-columns"></i> Editora Científica Médica • Jataí, GO
+                </span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="hidden md:inline">Catálogo Sistemático CDD: 616.4</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="bg-teal-950/90 text-teal-300 border border-teal-700/50 px-2.5 py-0.5 rounded-full font-medium">
+                    <i class="fa-solid fa-book-medical mr-1"></i> ISBN: 978-65-82901-02-7
+                </span>
+                <a href="equipe.html" class="hover:text-white transition">Corpo Editorial Oficial <i class="fa-solid fa-arrow-up-right-from-square ml-0.5 text-[10px]"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Editora Mente e Saúde -->
+            <a href="index.html" class="flex items-center gap-3.5 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-teal-800 flex flex-col items-center justify-center text-white shadow-md group-hover:scale-105 transition">
+                    <span class="font-serif font-black text-xl tracking-tighter leading-none">MS</span>
+                    <span class="text-[6px] tracking-widest uppercase font-bold text-teal-200 mt-0.5">Editora</span>
+                </div>
+                <div>
+                    <span class="block font-serif font-bold text-lg sm:text-xl text-slate-900 tracking-tight">Editora Mente e Saúde</span>
+                    <span class="block text-xs text-brand-700 font-semibold tracking-wider uppercase">Publicações Científicas & Acadêmicas</span>
+                </div>
+            </a>
+
+            <!-- Navegação -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                <a href="index.html" class="px-4 py-2 rounded-lg bg-brand-50 text-brand-800 font-bold text-sm border border-brand-200 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Livros (Edição Atual)
+                </a>
+                <a href="revista.html" class="px-4 py-2 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-newspaper"></i> Revista Científica (REAS)
+                </a>
+                <a href="equipe.html" class="px-4 py-2 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-users-gear"></i> Corpo Editorial
+                </a>
+            </nav>
+
+            <!-- Botão Rápido -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#capitulos" class="bg-brand-700 hover:bg-brand-800 text-white text-sm font-semibold px-4 py-2.5 rounded-lg shadow-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-list-check"></i> Ver Sumário
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="md:hidden flex border-t border-slate-100 bg-slate-50 px-2 py-1.5 justify-around text-xs font-semibold">
+            <a href="index.html" class="text-brand-700 bg-brand-50 px-3 py-1.5 rounded-md"><i class="fa-solid fa-book-open mr-1"></i>Livros</a>
+            <a href="revista.html" class="text-slate-600 px-3 py-1.5 rounded-md"><i class="fa-solid fa-newspaper mr-1"></i>Revista REAS</a>
+            <a href="equipe.html" class="text-slate-600 px-3 py-1.5 rounded-md"><i class="fa-solid fa-users-gear mr-1"></i>Corpo Editorial</a>
+        </div>
+    </header>
+
+    <!-- HERO: VITRINE DA EDIÇÃO ATUAL DO LIVRO -->
+    <section class="relative bg-endo-dark bio-pattern text-white overflow-hidden py-16 lg:py-24 border-b-4 border-teal-500">
+        <!-- Efeitos de Luz Bioluminescente -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-10 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Coluna Esquerda: Informações da Obra -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex flex-wrap items-center gap-2">
+                        <span class="bg-teal-500/20 border border-teal-400/40 text-teal-300 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                            <i class="fa-solid fa-star mr-1"></i> Lançamento • Edição Atual 2026
+                        </span>
+                        <span class="bg-slate-800/90 border border-slate-700 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full">
+                            Volume 1 • Edição 1
+                        </span>
+                        <span class="bg-emerald-950/90 border border-emerald-700/60 text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full">
+                            Livro Eletrônico (E-book PDF)
+                        </span>
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
+                        PRINCÍPIOS DA <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-300 to-cyan-300">ENDOCRINOLOGIA</span> PARA O MÉDICO GENERALISTA
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Obra médica estruturada para capacitar médicos generalistas, residentes e estudantes de medicina na tomada de decisão clínica baseada em evidências na Atenção Primária à Saúde (APS), ambulatórios e cenários de urgência e emergência endócrino-metabólica.
+                    </p>
+
+                    <!-- Organizadores da Obra -->
+                    <div class="bg-slate-900/70 border border-teal-800/60 rounded-xl p-4 sm:p-5 backdrop-blur-sm">
+                        <p class="text-xs uppercase tracking-wider text-teal-400 font-bold mb-3">
+                            <i class="fa-solid fa-user-doctor mr-1.5"></i> Organização e Autoria Principal
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                            <div class="bg-slate-800/70 p-2.5 rounded-lg border border-slate-700/60">
+                                <span class="font-bold text-white block">Leonardo Macedo</span>
+                                <span class="text-xs text-slate-400">Diretoria Geral & Supervisão</span>
+                            </div>
+                            <div class="bg-slate-800/70 p-2.5 rounded-lg border border-slate-700/60">
+                                <span class="font-bold text-white block">Lucas Assis Costa</span>
+                                <span class="text-xs text-slate-400">Produção Editorial & Projeto</span>
+                            </div>
+                            <div class="bg-slate-800/70 p-2.5 rounded-lg border border-slate-700/60">
+                                <span class="font-bold text-white block">Laura Rodrigues Bicca</span>
+                                <span class="text-xs text-slate-400">Preparação de Originais & Capa</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metadados Oficiais Rápidos -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                        <div class="bg-slate-900/50 border border-slate-800 p-3 rounded-lg">
+                            <span class="text-[11px] text-slate-400 uppercase block">Registro ISBN</span>
+                            <span class="font-mono font-bold text-sm text-teal-300">978-65-82901-02-7</span>
+                        </div>
+                        <div class="bg-slate-900/50 border border-slate-800 p-3 rounded-lg">
+                            <span class="text-[11px] text-slate-400 uppercase block">Classificação CDD</span>
+                            <span class="font-mono font-bold text-sm text-teal-300">616.4 (Medicina)</span>
+                        </div>
+                        <div class="bg-slate-900/50 border border-slate-800 p-3 rounded-lg">
+                            <span class="text-[11px] text-slate-400 uppercase block">Extensão</span>
+                            <span class="font-bold text-sm text-white">9 Capítulos / 69 p.</span>
+                        </div>
+                        <div class="bg-slate-900/50 border border-slate-800 p-3 rounded-lg">
+                            <span class="text-[11px] text-slate-400 uppercase block">Publicação</span>
+                            <span class="font-bold text-sm text-white">Jataí, GO • 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="livro-endocrinologia.pdf" target="_blank" class="bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-400 hover:to-emerald-500 text-slate-950 font-extrabold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2.5">
+                            <i class="fa-solid fa-file-pdf text-lg"></i> Acessar Livro Completo (PDF)
+                        </a>
+                        <a href="#ficha-catalografica" class="bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-600 font-semibold px-5 py-3.5 rounded-xl transition flex items-center gap-2">
+                            <i class="fa-solid fa-barcode"></i> Ficha Catalográfica e ISBN
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Mockup 3D Bioluminescente da Capa do Livro -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <!-- Moldura da Capa do Livro -->
+                        <div class="rounded-2xl overflow-hidden border-2 border-teal-400/50 bg-gradient-to-b from-[#062430] via-[#041821] to-[#021017] cover-glow p-6 relative">
+                            
+                            <!-- Topo da Capa -->
+                            <div class="text-center border-b border-teal-500/30 pb-3 mb-4">
+                                <span class="text-[10px] font-bold tracking-[0.25em] text-teal-300 uppercase block">Editora Mente e Saúde</span>
+                            </div>
+
+                            <!-- Arte Anatômica Endócrina Bioluminescente (SVG de Alta Precisão) -->
+                            <div class="relative my-2 flex flex-col items-center justify-center py-4">
+                                <svg viewBox="0 0 320 270" class="w-full h-56 drop-shadow-[0_0_15px_rgba(45,212,191,0.55)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Moléculas Hormonais de Fundo -->
+                                    <g stroke="#2dd4bf" stroke-opacity="0.35" stroke-width="1.5">
+                                        <polygon points="240,40 255,32 270,40 270,58 255,66 240,58" />
+                                        <polygon points="270,40 285,32 300,40 300,58 285,66 270,58" />
+                                        <line x1="255" y1="32" x2="255" y2="18" />
+                                        <circle cx="255" cy="15" r="3" fill="#5eead4" />
+                                        <polygon points="35,155 50,147 65,155 65,173 50,181 35,173" />
+                                        <line x1="65" y1="155" x2="82" y2="147" />
+                                        <circle cx="85" cy="145" r="3" fill="#5eead4" />
+                                    </g>
+                                    <!-- Glândula Tireoide (Superior Esquerda) -->
+                                    <g transform="translate(45, 15)">
+                                        <path d="M35,10 C20,5 8,20 10,45 C12,68 25,80 35,72 C40,68 44,65 48,65 C52,65 56,68 61,72 C71,80 84,68 86,45 C88,20 76,5 61,10 C55,12 52,28 48,28 C44,28 41,12 35,10 Z" fill="url(#thyroidGrad)" stroke="#5eead4" stroke-width="2.2"/>
+                                        <path d="M22,28 L35,40 M20,50 L36,45 M74,28 L61,40 M76,50 L60,45" stroke="#99f6e4" stroke-width="1" stroke-opacity="0.6"/>
+                                        <text x="48" y="92" fill="#5eead4" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">TIREOIDE</text>
+                                    </g>
+                                    <!-- Pâncreas e Duodeno (Centro) -->
+                                    <g transform="translate(85, 95)">
+                                        <path d="M35,20 C12,20 5,45 25,62 C42,75 65,68 65,55" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" stroke-opacity="0.4"/>
+                                        <path d="M35,32 C35,18 65,15 110,20 C145,24 168,12 175,22 C182,32 150,48 110,50 C70,52 35,46 35,32 Z" fill="url(#pancreasGrad)" stroke="#6ee7b7" stroke-width="2.2"/>
+                                        <path d="M48,33 Q105,35 162,23" stroke="#a7f3d0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                                        <text x="105" y="68" fill="#6ee7b7" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">PÂNCREAS ENDÓCRINO</text>
+                                    </g>
+                                    <!-- Glândulas Adrenais e Rins (Inferior) -->
+                                    <g transform="translate(55, 180)">
+                                        <!-- Adrenal/Rim Esq -->
+                                        <path d="M25,25 C10,25 5,45 12,65 C18,80 35,82 40,70 C44,60 38,52 38,45 C38,35 38,25 25,25 Z" fill="#0f766e" fill-opacity="0.45" stroke="#2dd4bf" stroke-width="1.5"/>
+                                        <path d="M12,24 L28,8 L42,24 Z" fill="#10b981" stroke="#a7f3d0" stroke-width="2"/>
+                                        <!-- Adrenal/Rim Dir -->
+                                        <path d="M175,25 C190,25 195,45 188,65 C182,80 165,82 160,70 C156,60 162,52 162,45 C162,35 162,25 175,25 Z" fill="#0f766e" fill-opacity="0.45" stroke="#2dd4bf" stroke-width="1.5"/>
+                                        <path d="M158,24 L172,8 L188,24 Z" fill="#10b981" stroke="#a7f3d0" stroke-width="2"/>
+                                        <text x="100" y="78" fill="#5eead4" font-size="9" font-weight="bold" text-anchor="middle" letter-spacing="1">EIXO ADRENAL</text>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="thyroidGrad" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#10b981" stop-opacity="0.7"/>
+                                            <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+                                        </linearGradient>
+                                        <linearGradient id="pancreasGrad" x1="0" y1="0" x2="1" y2="0">
+                                            <stop offset="0%" stop-color="#34d399" stop-opacity="0.75"/>
+                                            <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.35"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <!-- Título na Capa -->
+                            <div class="text-center space-y-1 my-3">
+                                <h2 class="font-serif font-black text-xl tracking-wide text-white leading-snug">
+                                    PRINCÍPIOS DA<br>
+                                    <span class="text-teal-300">ENDOCRINOLOGIA</span><br>
+                                    PARA O MÉDICO GENERALISTA
+                                </h2>
+                                <p class="text-xs text-slate-300 pt-2 font-medium">
+                                    Leonardo Macedo • Lucas Assis Costa • Laura Rodrigues Bicca
+                                </p>
+                            </div>
+
+                            <!-- Rodapé da Capa com Volume e Código de Barras ISBN -->
+                            <div class="mt-5 pt-4 border-t border-teal-500/30 flex items-center justify-between">
+                                <div>
+                                    <span class="block text-xs font-extrabold text-teal-300 tracking-wider">VOLUME 1 • EDIÇÃO 1</span>
+                                    <span class="block text-[10px] text-slate-400">Jataí, GO • 2026</span>
+                                </div>
+                                <div class="bg-white text-slate-950 px-2.5 py-1.5 rounded text-right shadow">
+                                    <span class="block font-mono text-[8px] font-bold">ISBN 978-65-82901-02-7</span>
+                                    <div class="h-4 w-28 bg-[repeating-linear-gradient(90deg,#000,#000_2px,#fff_2px,#fff_4px,#000_4px,#000_5px,#fff_5px,#fff_8px)] my-0.5"></div>
+                                    <span class="block font-mono text-[8px] tracking-widest text-center font-bold">9 786582 901027</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: PROPÓSITO CLÍNICO, PREFÁCIO E APRESENTAÇÃO (SÍNTESE EDITORIAL) -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Escopo Pedagógico e Assistencial</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-2">
+                    Propedêutica Endócrina Desmistificada para a Prática Diária
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    Concebido para superar barreiras no atendimento inicial das endocrinopatias, este volume oferece condutas sistematizadas para Unidades Básicas de Saúde (UBS), ambulatórios e salas de emergência.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pilar 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-500 transition shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Raciocínio Sindrômico na APS</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Demonstra como realizar diagnósticos diferenciais precisos a partir de uma anamnese minuciosa, exame físico direcionado e exames laboratoriais acessíveis na rede pública e suplementar.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-500 transition shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Prevenção de Iatrogenias e Red Flags</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Destaca sinais de alarme em emergências como crise adrenal, tempestade tireotóxica, cetoacidose e neuropatia óptica compressiva, além de alertar sobre prescrições indevidas de glicocorticoides e hormônios.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-brand-500 transition shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Referenciamento Qualificado</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Estabelece critérios objetivos para distinguir pacientes que devem ser manejados longitudinalmente na Atenção Primária daqueles que exigem encaminhamento ambulatorial prioritário ou urgência hospitalar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: SUMÁRIO DETALHADO DOS 9 CAPÍTULOS E AUTORES -->
+    <section id="capitulos" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Estrutura Científica da Obra</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
+                        Sumário de Capítulos e Corpo de Autores
+                    </h2>
+                </div>
+                <p class="text-sm text-slate-600">
+                    9 capítulos revisados e fundamentados nas diretrizes mais recentes (SBEM, SBD, ATA, ADA e Ministério da Saúde).
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <!-- Capítulo 1 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 01 • Págs. 07–12</span>
+                            <span class="text-xs font-semibold text-slate-400">Endocrinologia Pediátrica</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Do Teste do Pezinho ao Crescimento Infantil: Triagem Neonatal Endócrina, Hipotireoidismo Congênito e o Rastreio Precoce na Atenção Básica
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Aborda a fisiopatologia da disgenesia e disormonogênese tireoidiana, janela crítica de mielinização, interpretação do TSH neonatal e início imediato de levotiroxina (10–15 mcg/kg/dia).
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Emannuelle Luckezzi Silveira Santos</strong> (Médica - UNIFENAS-BH)</p>
+                        <p>• <strong>Paulo Victor Silveira Andrade</strong> (Médico - UNIFENAS-BH)</p>
+                        <p>• <strong>Ana Luisa Braga Abalen Faria</strong> (Médica - FAMINAS-BH)</p>
+                        <p>• <strong>Letícia Palhares dos Santos</strong> (Acadêmica de Medicina - Afya UNIPTAN)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 2 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 02 • Págs. 13–18</span>
+                            <span class="text-xs font-semibold text-slate-400">Crescimento & Puberdade</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Do Desenvolvimento à Puberdade: Fisiologia do Crescimento, Puberdade Precoce ou Atrasada e a Abordagem da Baixa Estatura
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Explora os eixos GH-IGF-1 e HHG, cálculo do alvo genético familiar, estadiamento de Tanner, avaliação da idade óssea (Greulich-Pyle) e critérios de referência ao endocrinologista pediátrico.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Larissa Marques Landim</strong> (Médica - FAMINAS-BH)</p>
+                        <p>• <strong>Rodrigo Santos Lima</strong> (Acadêmico de Medicina - Afya UNIPTAN)</p>
+                        <p>• <strong>Felipe Freitas Lemos Marques</strong> (Médico - FCMMG)</p>
+                        <p>• <strong>João Victor Silveira Andrade</strong> (Acadêmico de Medicina - Universidade de Itaúna - UIT)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 3 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 03 • Págs. 19–24</span>
+                            <span class="text-xs font-semibold text-slate-400">Tireoide & Neuro-Oftalmologia</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Complicações Extratireoidianas da Doença de Graves: Foco na Orbitopatia e Risco Visual
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Detalha a coexpressão TSHR/IGF-1R nos fibroblastos orbitários, impacto do tabagismo, sinais de Dalrymple e von Graefe, contraindicações ao iodo radioativo e urgências por neuropatia óptica.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Leonardo Macedo</strong> (Médico - UFMG)</p>
+                        <p>• <strong>Rodrigo Tavares Gonçalves</strong> (Médico - IOCM)</p>
+                        <p>• <strong>Vitória Fernandes Rezende</strong> (Médica - UNIPAC)</p>
+                        <p>• <strong>Lucas Assis Costa</strong> (Médico - IOCM-MG)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 4 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 04 • Págs. 25–30</span>
+                            <span class="text-xs font-semibold text-slate-400">Retina & Microangiopatia</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Manifestações Retinianas das Endocrinopatias: Da Retinopatia Diabética a Outras Alterações Oculares
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Sistematiza a perda de pericitos, angiogênese mediada por VEGF, edema macular diabético, cronograma de rastreio fundoscópico e cuidados para evitar o fenômeno de piora precoce (Early Worsening).
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Leonardo Macedo</strong> (Médico - UFMG)</p>
+                        <p>• <strong>Vinicius Candido Rodrigues</strong> (Médico - UFOP)</p>
+                        <p>• <strong>Carolina Vieira Siena Martins</strong> (Médica - Afya Palmas)</p>
+                        <p>• <strong>Lucas Assis Costa</strong> (Médico - IOCM-MG)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 5 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 05 • Págs. 31–38</span>
+                            <span class="text-xs font-semibold text-slate-400">Diabetes & Risco Cardiorrenal</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Das Terapias Crônicas ao Risco Cardiovascular: Otimização Terapêutica no Diabetes Mellitus Tipo 2 e a Prevenção de Complicações Micro e Macrovasculares
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Integra o controle glicêmico à proteção cardiorrenal com iSGLT2 e arGLP-1, avaliação sistematizada do pé diabético e manejo de emergências hiperglicêmicas conforme diretrizes ADA/SBD 2026.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Larissa Marques Landim</strong> (Médica - FAMINAS-BH)</p>
+                        <p>• <strong>Guilherme Henrique Silva Oliveira</strong> (Acadêmico de Medicina - UFLA)</p>
+                        <p>• <strong>Vitória Fernandes Rezende</strong> (Médica - UNIPAC)</p>
+                        <p>• <strong>Laura Rodrigues Bicca</strong> (Acadêmica de Medicina - UNINOVE)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 6 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 06 • Págs. 39–46</span>
+                            <span class="text-xs font-semibold text-slate-400">Tireoidopatias & Nódulos</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Dos Processos Autoimunes aos Distúrbios Funcionais: Tireoidite de Hashimoto, Tireotoxicose e o Fluxograma de Investigação do Nódulo Tireoidiano
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Apresenta a diferenciação entre hipertireoidismo e tireoidites destrutivas, titulação segura de levotiroxina em cardiopatas e idosos, e critérios de indicação de PAAF segundo a classificação ATA.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Larissa Cota de Barcelos</strong> (Médica - UNIFENAS-BH)</p>
+                        <p>• <strong>Sarah Silveira Amorim Evangelista</strong> (Acadêmica de Medicina - Faculdade Atenas Passos)</p>
+                        <p>• <strong>Jennifer Rocha de Castro</strong> (Médica - UAM)</p>
+                        <p>• <strong>Laura Rodrigues Bicca</strong> (Acadêmica de Medicina - UNINOVE)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 7 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 07 • Págs. 47–54</span>
+                            <span class="text-xs font-semibold text-slate-400">Córtex Adrenal & Corticoterapia</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Da Fadiga Crônica ao Colapso Hemodinâmico: Insuficiência Adrenal, Síndrome de Cushing e os Riscos do Uso Indiscriminado de Glicocorticoides
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Aborda o diagnóstico bioquímico do hipercortisolismo e da insuficiência adrenal, protocolos de ataque com hidrocortisona endovenosa na crise adrenal aguda e desmame seguro de corticoides.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Laura Rodrigues Bicca</strong> (Acadêmica de Medicina - UNINOVE)</p>
+                        <p>• <strong>Clara de Moura Rachid</strong> (Médica - Universidade de Itaúna - UIT)</p>
+                        <p>• <strong>Hassan Barradas Calito Barbosa</strong> (Acadêmico de Medicina - CUNBM)</p>
+                        <p>• <strong>Izabella Soares Kfoury</strong> (Acadêmica de Medicina - UNIFENAS-BH)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 8 -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 08 • Págs. 55–61</span>
+                            <span class="text-xs font-semibold text-slate-400">Metabolismo Mineral e Ósseo</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Das Doenças Sistêmicas ao Metabolismo Ósseo: Hipovitaminose D, Hiperparatireoidismo e Estratégias de Prevenção e Tratamento da Osteoporose
+                        </h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Revisa os pontos de corte de 25(OH)D segundo a SBEM/SBPC-ML, interpretação da densitometria óssea (DXA), manejo com bisfosfonatos e critérios cirúrgicos no hiperparatireoidismo primário.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 text-xs text-slate-700 space-y-1">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-users text-brand-600 mr-1"></i> Autores:</span>
+                        <p>• <strong>Isabela Ferreira Lima</strong> (Médica - UFJF)</p>
+                        <p>• <strong>Raycia Souza</strong> (Acadêmica de Medicina - PUC-Minas)</p>
+                        <p>• <strong>Arthur Breno Moreira Campos</strong> (Acadêmico de Medicina - PUC-Minas)</p>
+                        <p>• <strong>Maria Fernanda Londe de Castro Boghi</strong> (Acadêmica de Medicina - PUC-Minas)</p>
+                    </div>
+                </article>
+
+                <!-- Capítulo 9 (Largura Total no Grid) -->
+                <article class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition lg:col-span-2 flex flex-col md:flex-row justify-between gap-6">
+                    <div class="md:w-2/3">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="bg-brand-50 text-brand-800 border border-brand-200 text-xs font-extrabold px-3 py-1 rounded-full">Capítulo 09 • Págs. 62–69</span>
+                            <span class="text-xs font-semibold text-slate-400">Endocrinologia Reprodutiva & Envelhecimento</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-slate-900 leading-snug mb-2">
+                            Do Envelhecimento Natural às Transições Hormonais: Climatério, Menopausa, Andropausa e as Evidências Atuais sobre a Terapia de Reposição Hormonal
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Analisa a janela de oportunidade na terapia hormonal da menopausa (THM), proteção endometrial, critérios diagnósticos estritos do hipogonadismo masculino tardio e contraindicações ao uso estético de hormônios.
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 md:border-l border-slate-100 md:pl-6 text-xs text-slate-700 flex flex-col justify-center">
+                        <span class="font-bold text-slate-900 block mb-1"><i class="fa-solid fa-user-pen text-brand-600 mr-1"></i> Autor:</span>
+                        <p>• <strong>João Vitor Soalheiro Diniz</strong></p>
+                        <p class="text-slate-500">Acadêmico de Medicina — Faculdade Ciências Médicas de Minas Gerais (FCMMG)</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO: FICHA CATALOGRÁFICA OFICIAL E EXPEDIENTE TÉCNICO -->
+    <section id="ficha-catalografica" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Expediente Técnico -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Expediente da Edição</span>
+                        <h2 class="font-serif text-2xl font-bold text-slate-900 mt-1">Equipe Técnica do Livro</h2>
+                        <p class="text-sm text-slate-600 mt-2">
+                            Coordenação editorial e catalogação sistemática oficial registrada junto à Câmara Brasileira do Livro (CBL).
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-4 text-sm">
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Diretoria Geral</span>
+                            <span class="font-bold text-slate-900">Leonardo Macedo</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Produção Editorial</span>
+                            <span class="font-bold text-slate-900">Lucas Assis Costa</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Preparação de Originais</span>
+                            <span class="font-bold text-slate-900">Laura Rodrigues Bicca</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Projeto Gráfico e Diagramação</span>
+                            <span class="font-bold text-slate-900">Lucas Assis Costa</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Revisão e Supervisão</span>
+                            <span class="font-bold text-slate-900">Leonardo Macedo</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-200 pb-2.5">
+                            <span class="text-slate-500 font-medium">Design de Capa</span>
+                            <span class="font-bold text-slate-900">Laura Rodrigues Bicca</span>
+                        </div>
+                        <div class="flex justify-between pt-1">
+                            <span class="text-slate-500 font-medium">Bibliotecária Responsável</span>
+                            <span class="font-bold text-brand-800">Aline Graziele Benitez (CRB-1/3129)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão de Ficha Catalográfica Padrão ABNT/CIP -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 border-2 border-slate-800 rounded-xl p-6 sm:p-8 shadow-sm font-mono text-xs sm:text-sm text-slate-800 leading-relaxed">
+                        <div class="text-center border-b border-slate-300 pb-3 mb-5 font-sans">
+                            <span class="font-bold uppercase tracking-wider text-xs text-slate-500">Dados Internacionais de Catalogação na Publicação (CIP)</span>
+                        </div>
+                        <p class="mb-4">
+                            Princípios da endocrinologia para o médico generalista [livro eletrônico] : volume 1 / organização Leonardo Macedo, Lucas Assis Costa, Laura Rodrigues Bicca. -- 1. ed. -- Jataí, GO : Editora Mente e Saúde, 2026.<br>
+                            PDF
+                        </p>
+                        <p class="mb-4">
+                            Vários autores.<br>
+                            Bibliografia.<br>
+                            <strong>ISBN 978-65-82901-02-7</strong>
+                        </p>
+                        <p class="mb-6">
+                            1. Atenção Primária à Saúde (APS) 2. Endocrinologia 3. Medicina interna 4. Médicos (Prática geral) I. Macedo, Leonardo. II. Costa, Lucas Assis. III. Bicca, Laura Rodrigues.
+                        </p>
+                        <div class="flex justify-between border-t border-slate-300 pt-3 font-bold text-xs">
+                            <span>26-410460.0</span>
+                            <span>CDD-616.4</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 bg-brand-50 border border-brand-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="text-xs text-brand-900">
+                            <strong>Índices para Catálogo Sistemático:</strong><br>
+                            1. Endocrinologia : Princípios : Medicina 616.4 // Aline Graziele Benitez – Bibliotecária – CRB-1/3129
+                        </div>
+                        <a href="equipe.html" class="shrink-0 bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition">
+                            Ver Corpo Editorial Completo <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE INTEGRAÇÃO COM A REVISTA E O CORPO EDITORIAL -->
+    <section class="py-12 bg-gradient-to-r from-endo-dark to-brand-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-teal-300 text-xs font-bold uppercase tracking-widest">Ecossistema Científico Mente e Saúde</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold mt-1">
+                    Conheça também a Revista de Estudos Acadêmicos em Saúde (REAS)
+                </h3>
+                <p class="text-slate-300 text-sm mt-1">
+                    Periódico médico mantido pelo mesmo Corpo Editorial da Editora Mente e Saúde (Vol. 6, n. 1, 2026 • DOI: 10.5281/zenodo.23906030).
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-3 shrink-0">
+                <a href="revista.html" class="bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold text-sm px-5 py-3 rounded-xl transition">
+                    Acessar Página da Revista
+                </a>
+                <a href="equipe.html" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm px-5 py-3 rounded-xl transition">
+                    Corpo Editorial Unificado
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Institucional -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <span class="font-serif font-bold text-white text-base block mb-2">Editora Mente e Saúde</span>
+                <p class="leading-relaxed">
+                    Reservados todos os direitos de publicação à Editora Mente e Saúde. É proibida a duplicação ou reprodução deste volume, no todo ou em parte, sob quaisquer formas, sem permissão expressa da Editora.
+                </p>
+            </div>
+            <div>
+                <span class="font-bold text-white uppercase tracking-wider block mb-2">Navegação Rápida</span>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-teal-400 transition">Vitrine de Livros (Endocrinologia Vol. 1)</a></li>
+                    <li><a href="revista.html" class="hover:text-teal-400 transition">Revista REAS - Clínica Integrada (Vol. 6)</a></li>
+                    <li><a href="equipe.html" class="hover:text-teal-400 transition">Corpo Editorial e Conselho Científico</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="font-bold text-white uppercase tracking-wider block mb-2">Dados de Registro</span>
+                <p>Sede Editorial: Jataí - GO, Brasil</p>
+                <p class="mt-1">Livro Atual: ISBN 978-65-82901-02-7 | CDD 616.4</p>
+                <p class="mt-1">Revista REAS: DOI 10.5281/zenodo.23906030</p>
+                <p class="mt-3 text-slate-500">© 2026 Editora Mente e Saúde. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
