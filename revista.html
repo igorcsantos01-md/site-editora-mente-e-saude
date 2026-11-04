@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista de Estudos Acadêmicos em Saúde (REAS) | Editora Mente e Saúde</title>
+    <meta name="description" content="Revista de Estudos Acadêmicos em Saúde - Clínica Integrada. Vol. 6, n. 1 (2026). DOI: 10.5281/zenodo.23906030. Editora Mente e Saúde.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Barra Superior -->
+    <div class="bg-slate-900 text-slate-300 text-xs border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-3">
+                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-book-journal-whills mr-1"></i> Periódico Médico • Clínica Integrada</span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <span class="hidden sm:inline">Vol. 6, n. 1 (2026)</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-emerald-950 text-emerald-300 border border-emerald-700/50 px-2.5 py-0.5 rounded-full font-mono text-[11px]">
+                    DOI: 10.5281/zenodo.23906030
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-600 to-teal-800 flex flex-col items-center justify-center text-white shadow-md">
+                    <span class="font-serif font-black text-xl tracking-tighter leading-none">MS</span>
+                    <span class="text-[6px] tracking-widest uppercase font-bold text-teal-200 mt-0.5">Editora</span>
+                </div>
+                <div>
+                    <span class="block font-serif font-bold text-lg sm:text-xl text-slate-900">Editora Mente e Saúde</span>
+                    <span class="block text-xs text-brand-700 font-semibold tracking-wider uppercase">Divisão de Periódicos Científicos</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="px-4 py-2 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Livros (Edição Atual)
+                </a>
+                <a href="revista.html" class="px-4 py-2 rounded-lg bg-brand-50 text-brand-800 font-bold text-sm border border-brand-200 flex items-center gap-2">
+                    <i class="fa-solid fa-newspaper"></i> Revista Científica (REAS)
+                </a>
+                <a href="equipe.html" class="px-4 py-2 rounded-lg text-slate-600 hover:text-brand-700 hover:bg-slate-100 font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-users-gear"></i> Corpo Editorial
+                </a>
+            </nav>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="md:hidden flex border-t border-slate-100 bg-slate-50 px-2 py-1.5 justify-around text-xs font-semibold">
+            <a href="index.html" class="text-slate-600 px-3 py-1.5 rounded-md"><i class="fa-solid fa-book-open mr-1"></i>Livros</a>
+            <a href="revista.html" class="text-brand-700 bg-brand-50 px-3 py-1.5 rounded-md"><i class="fa-solid fa-newspaper mr-1"></i>Revista REAS</a>
+            <a href="equipe.html" class="text-slate-600 px-3 py-1.5 rounded-md"><i class="fa-solid fa-users-gear mr-1"></i>Corpo Editorial</a>
+        </div>
+    </header>
+
+    <!-- Banner da Revista -->
+    <section class="bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 text-white py-14 border-b-4 border-emerald-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Edição Vigente • Vol. 6, n. 1 (2026)
+                        </span>
+                        <span class="bg-white/10 text-slate-200 text-xs font-mono px-3 py-1 rounded-full">
+                            DOI: 10.5281/zenodo.23906030
+                        </span>
+                    </div>
+                    <h1 class="font-serif text-3xl sm:text-4xl font-black tracking-tight leading-tight">
+                        REVISTA DE ESTUDOS ACADÊMICOS EM SAÚDE (REAS) — CLÍNICA INTEGRADA
+                    </h1>
+                    <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        Periódico médico voltado à difusão de revisões sistemáticas e atualizações clínicas em medicina de emergência, clínica médica, dermatologia, reumatologia e cirurgia do trauma, mantendo o mesmo Corpo Editorial oficial da Editora Mente e Saúde.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="revista-reas-vol6.pdf" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm px-5 py-3 rounded-xl shadow transition flex items-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> Baixar Volume Completo (PDF)
+                        </a>
+                        <a href="equipe.html" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm px-5 py-3 rounded-xl transition flex items-center gap-2">
+                            <i class="fa-solid fa-user-shield"></i> Ver Corpo Editorial da Revista
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mockup da Capa da Revista Vol. 6 n. 1 -->
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="w-64 bg-gradient-to-b from-teal-700 via-emerald-800 to-slate-900 rounded-xl p-5 border-2 border-emerald-400/50 shadow-2xl text-center space-y-4">
+                        <div class="flex justify-between items-center text-[10px] text-emerald-200 font-mono border-b border-emerald-500/30 pb-2">
+                            <span>Vol. 6 n. 1 (2026)</span>
+                            <span>10.5281/zenodo.23906030</span>
+                        </div>
+                        <div class="py-3">
+                            <span class="text-[10px] uppercase tracking-widest text-emerald-300 font-bold block">Editora Mente e Saúde</span>
+                            <h2 class="font-serif font-black text-lg text-white mt-2 leading-snug">
+                                REVISTA DE ESTUDOS ACADÊMICOS EM SAÚDE
+                            </h2>
+                            <span class="inline-block mt-2 bg-emerald-500/30 border border-emerald-300/40 text-emerald-200 text-[10px] font-bold px-2.5 py-0.5 rounded">
+                                CLÍNICA INTEGRADA
+                            </span>
+                        </div>
+                        <div class="text-[10px] text-slate-300 border-t border-emerald-500/30 pt-3">
+                            Periódico Médico Não Indexado a Base de Dados • Todos os direitos reservados 2026
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal: Artigos Publicados + Barra Lateral do Corpo Editorial -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Lista de Artigos do Volume 6, n. 1 -->
+            <div class="lg:col-span-8 space-y-8">
+                <div class="border-b border-slate-200 pb-4">
+                    <span class="text-brand-700 font-bold text-xs uppercase tracking-widest">Sumário da Edição • Páginas 06 a 33</span>
+                    <h2 class="font-serif text-2xl font-bold text-slate-900 mt-1">Artigos Científicos Publicados (Vol. 6, n. 1)</h2>
+                </div>
+
+                <!-- Artigo 1 -->
+                <article class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:border-brand-600 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold px-3 py-1 rounded-full">
+                            Artigo Original de Revisão Sistemática • Págs. 06–15
+                        </span>
+                        <span class="font-mono text-xs text-slate-500">DOI: 10.5281/zenodo.23906030</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
+                        1. O Manejo Rápido de Emergências Hipertensivas e Cardiovasculares no Pronto-Socorro
+                    </h3>
+                    <p class="text-xs font-semibold text-brand-700 mb-4">
+                        <i class="fa-solid fa-user-doctor mr-1"></i> Autora: Luísa Vilela de Oliveira Carvalho (Médica)
+                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Síntese Executiva:</strong> Revisão sistemática estruturada sob as diretrizes do protocolo PRISMA (a partir de 452 registros rastreados nas bases PubMed, SciELO e Web of Science, resultando em 24 estudos incluídos). Analisa a diferenciação imediata entre urgência e emergência hipertensiva guiada por lesão aguda de órgão-alvo, metas seguras de redução da pressão arterial média (20% a 25% na primeira hora) e particularidades no manejo da dissecção aguda de aorta (controle estrito com betabloqueador precedendo vasodilatador) e do edema agudo de pulmão hipertensivo, integrando o uso do ultrassom <em>point-of-care</em> (POCUS).
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100 text-[11px] text-slate-500">
+                        <span class="font-bold text-slate-700">Palavras-chave:</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Emergências</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Hipertensão</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Pronto-socorro</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Cardiovascular</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Anti-hipertensivos</span>
+                    </div>
+                </article>
+
+                <!-- Artigo 2 -->
+                <article class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:border-brand-600 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold px-3 py-1 rounded-full">
+                            Artigo Original de Revisão Sistemática • Págs. 16–23
+                        </span>
+                        <span class="font-mono text-xs text-slate-500">DOI: 10.5281/zenodo.23906030</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
+                        2. Manifestações Cutâneas e Ungueais como Preditores Precoces da Artrite Psoriásica
+                    </h3>
+                    <p class="text-xs font-semibold text-brand-700 mb-4">
+                        <i class="fa-solid fa-user-doctor mr-1"></i> Autora: Luísa Vilela de Oliveira Carvalho (Médica)
+                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Síntese Executiva:</strong> Revisão sistemática fundamentada no protocolo PRISMA 2020 que investiga a conexão anatômica e inflamatória do "órgão entesial" (eixo IL-23/IL-17) entre a matriz ungueal e os tendões extensores distais. Demonstra como alterações dermatológicas e ungueais — como <em>pitting</em>, onicólise, psoríase do couro cabeludo e lesões em áreas de dobras (psoríase invertida) — sinalizam maior risco de evolução para artrite psoriásica, destacando o uso ambulatorial da ferramenta de triagem PEST para prevenir dano articular erosivo.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100 text-[11px] text-slate-500">
+                        <span class="font-bold text-slate-700">Palavras-chave:</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Psoríase</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Artrite Psoriásica</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Distrofia Ungueal</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Diagnóstico Precoce</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Reumatologia</span>
+                    </div>
+                </article>
+
+                <!-- Artigo 3 -->
+                <article class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:border-brand-600 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold px-3 py-1 rounded-full">
+                            Artigo Original de Revisão Sistemática • Págs. 24–33
+                        </span>
+                        <span class="font-mono text-xs text-slate-500">DOI: 10.5281/zenodo.23906030</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
+                        3. O Papel do E-FAST na Decisão de Laparotomia no Trauma Abdominal Fechado
+                    </h3>
+                    <p class="text-xs font-semibold text-brand-700 mb-4">
+                        <i class="fa-solid fa-user-doctor mr-1"></i> Autora: Luísa Vilela de Oliveira Carvalho (Médica)
+                    </p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        <strong>Síntese Executiva:</strong> Revisão sistemática PRISMA (518 estudos identificados nas bases PubMed, SciELO e Web of Science) acerca do desempenho diagnóstico da avaliação ultrassonográfica estendida direcionada para o trauma (E-FAST). Evidencia especificidade global de 98% na detecção de líquido livre peritoneal, definindo a indicação imediata de laparotomia exploradora nos pacientes hemodinamicamente instáveis e direcionando pacientes estáveis para tomografia computadorizada com contraste visando ao tratamento não operatório seguro.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100 text-[11px] text-slate-500">
+                        <span class="font-bold text-slate-700">Palavras-chave:</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Traumatismos Abdominais</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Ultrassonografia</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Laparotomia</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Hemoperitônio</span>
+                        <span class="bg-slate-100 px-2 py-0.5 rounded">Choque Hemorrágico</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Coluna Lateral: Corpo Editorial Permanente da Revista e Editora -->
+            <aside class="lg:col-span-4 space-y-6">
+                <div class="bg-white rounded-2xl p-6 border-2 border-brand-600 shadow-sm sticky top-28">
+                    <div class="flex items-center gap-2.5 text-brand-700 font-bold text-xs uppercase tracking-widest mb-2">
+                        <i class="fa-solid fa-award text-base"></i> Corpo Editorial Unificado
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-4">
+                        Equipe Editorial Oficial
+                    </h3>
+                    <p class="text-xs text-slate-600 mb-5 leading-relaxed">
+                        A <strong>Editora Mente e Saúde</strong> mantém o mesmo corpo editorial científico em sua linha de Periódicos e Livros Acadêmicos:
+                    </p>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="bg-brand-50/80 border border-brand-200 p-3.5 rounded-xl">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-800 block">Editor-Chefe</span>
+                            <span class="font-bold text-slate-900 text-base block mt-0.5">Igor Costa Santos</span>
+                            <span class="text-xs text-slate-600 block">Universidade Federal de Jataí (UFJ)</span>
+                        </div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl space-y-3">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">Revisores e Colaboradores</span>
+                            <div>
+                                <span class="font-bold text-slate-900 block">Jandis Francisco dos Santos</span>
+                                <span class="text-xs text-slate-600 block">Professor e Especialista</span>
+                            </div>
+                            <div class="border-t border-slate-200 pt-2.5">
+                                <span class="font-bold text-slate-900 block">Bárbara Carvalho Pereira Lima Santos</span>
+                                <span class="text-xs text-slate-600 block">Universidade Federal de Jataí (UFJ)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-200">
+                        <a href="equipe.html" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs py-3 px-4 rounded-xl transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-users-viewfinder"></i> Acessar Página do Corpo Editorial
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Editora Mente e Saúde • Revista de Estudos Acadêmicos em Saúde (DOI: 10.5281/zenodo.23906030).</p>
+            <div class="flex space-x-4">
+                <a href="index.html" class="hover:text-white">Página de Livros</a>
+                <a href="revista.html" class="hover:text-white">Página da Revista</a>
+                <a href="equipe.html" class="hover:text-white">Corpo Editorial</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
